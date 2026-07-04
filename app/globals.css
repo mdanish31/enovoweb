@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* shadcn tokens */
+    --background: 210 40% 98%;
+    --foreground: 220 13% 13%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 13%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 13%;
+    --primary: 168 68% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 17% 95%;
+    --secondary-foreground: 220 13% 13%;
+    --muted: 210 17% 95%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 162 100% 95%;
+    --accent-foreground: 168 68% 30%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 168 68% 55%;
+    --radius: 1rem;
+
+    /* Enovo design system */
+    --c-bg:        #F7FAFC;
+    --c-bg-alt:    #F1F5F9;
+    --c-bg-mint:   #ECFDF5;
+    --c-white:     #FFFFFF;
+    --c-dark:      #0F172A;
+    --c-text:      #1E293B;
+    --c-body:      #475569;
+    --c-muted:     #94A3B8;
+    --c-border:    #E2E8F0;
+    --c-primary:   #16C79A;
+    --c-primary-h: #0EA47C;
+    --c-accent:    #38E0C3;
+    --c-accent-bg: #ECFDF5;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    background-color: var(--c-bg);
+    color: var(--c-text);
+    font-family: var(--font-plus-jakarta), system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-plus-jakarta), system-ui, -apple-system, sans-serif;
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+    color: var(--c-text);
+    font-weight: 700;
+  }
+  p { color: var(--c-body); }
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--c-bg-alt); }
+::-webkit-scrollbar-thumb { background: var(--c-accent); border-radius: 3px; }
+
+/* ─── Section spacing ─── */
+.section-pad {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .section-pad {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+/* ─── Section backgrounds ─── */
+.bg-site       { background-color: var(--c-bg); }
+.bg-white-sec  { background-color: var(--c-white); }
+.bg-alt        { background-color: var(--c-bg-alt); }
+.bg-mint-tint  { background-color: var(--c-accent-bg); }
+.bg-dark-sec   { background-color: var(--c-dark); }
+
+/* ─── Gradient text ─── */
+.gradient-text {
+  background: linear-gradient(135deg, #38E0C3 0%, #16C79A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Nav blur ─── */
+.nav-blur {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* ─── Premium card ─── */
+.card-premium {
+  background: var(--c-white);
+  border: 1px solid var(--c-border);
+  border-radius: 1rem;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+}
+.card-premium:hover {
+  border-color: rgba(56, 224, 195, 0.45);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  transform: translateY(-1px);
+}
+
+/* ─── Buttons ─── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--c-primary);
+  transition: background-color 0.15s ease, transform 0.12s ease, box-shadow 0.15s ease;
+  box-shadow: 0 2px 12px rgba(22, 199, 154, 0.3);
+}
+.btn-primary:hover  { background-color: var(--c-primary-h); }
+.btn-primary:active { transform: scale(0.975); }
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--c-primary);
+  background-color: transparent;
+  border: 1.5px solid var(--c-primary);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.btn-outline:hover {
+  background-color: var(--c-primary);
+  color: #fff;
+}
+
+/* ─── Chip ─── */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: 1px solid var(--c-border);
+  background: var(--c-white);
+  color: var(--c-body);
+  transition: all 0.15s;
+}
+.chip:hover {
+  border-color: var(--c-accent);
+  color: var(--c-primary);
+  background: var(--c-accent-bg);
+}
+
+/* ─── Subtle animations ─── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up {
+  animation: fadeUp 0.5s ease both;
+}
+
+/* ─── Label pill ─── */
+.section-label {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--c-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+}
