@@ -32,7 +32,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Image
-              src="/assets/images/logos/ENOVO_Png@4x_copy.png"
+              src="/enovoweb/assets/images/logos/ENOVO_Png@4x_copy.png"
               alt="Enovo IP Consulting — Patent and Trademark services, Pune India"
               width={120}
               height={36}

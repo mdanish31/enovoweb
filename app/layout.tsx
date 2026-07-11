@@ -23,11 +23,11 @@ export const metadata: Metadata = {
   alternates: { canonical: '/' },
   icons: {
     icon: [
-      { url: '/assets/images/logos/Enovo_Logo_Jpeg-01 copy.jpg', sizes: '32x32', type: 'image/jpeg' },
-      { url: '/assets/images/logos/Enovo_Logo_Jpeg-01 copy.jpg', sizes: '16x16', type: 'image/jpeg' },
+      { url: '/enovoweb/assets/images/logos/Enovo_Logo_Jpeg-01 copy.jpg', sizes: '32x32', type: 'image/jpeg' },
+      { url: '/enovoweb/assets/images/logos/Enovo_Logo_Jpeg-01 copy.jpg', sizes: '16x16', type: 'image/jpeg' },
     ],
-    apple: { url: '/assets/images/logos/Enovo_Logo_Jpeg-01 copy.jpg', type: 'image/jpeg' },
-    shortcut: '/assets/images/logos/Enovo_Logo_Jpeg-01 copy.jpg',
+    apple: { url: '/enovoweb/assets/images/logos/Enovo_Logo_Jpeg-01 copy.jpg', type: 'image/jpeg' },
+    shortcut: '/enovoweb/assets/images/logos/Enovo_Logo_Jpeg-01 copy.jpg',
   },
   openGraph: {
     type: 'website',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
       'Protect your patents, trademarks, industrial designs and copyrights with Enovo\'s expert IP consulting services.',
     images: [
       {
-        url: '/assets/images/logos/Enovo_Logo_Jpeg-01.jpg',
+        url: '/enovoweb/assets/images/logos/Enovo_Logo_Jpeg-01.jpg',
         width: 1200,
         height: 630,
         alt: 'Enovo — IP Consulting Firm, Pune India',
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     title: 'Enovo | Patent, Trademark & IP Consulting | Pune, India',
     description:
       'Helping startups, inventors and global clients protect patents, trademarks, industrial designs and copyrights. Based in Pune, India.',
-    images: ['/assets/images/logos/Enovo_Logo_Jpeg-01.jpg'],
+    images: ['/enovoweb/assets/images/logos/Enovo_Logo_Jpeg-01.jpg'],
   },
   robots: {
     index: true,
@@ -208,7 +208,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="msapplication-TileColor" content="#16C79A" />
         <meta name="author" content="Enovo" />
         <meta name="copyright" content="Enovo IP Consulting" />
-        <link rel="manifest" href="/manifest.json" />
+        <link rel="manifest" href="/enovoweb/manifest.json" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
