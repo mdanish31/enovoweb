@@ -45,8 +45,8 @@ export default function Navbar() {
         >
           <Image
             src={scrolled
-              ? '/enovoweb/assets/images/logos/Enovo_Logo_Jpeg-01.jpg'
-              : '/enovoweb/assets/images/logos/ENOVO_Png@4x_copy.png'}
+              ? '/assets/images/logos/Enovo_Logo_Jpeg-01.jpg'
+              : '/assets/images/logos/ENOVO_Png@4x_copy.png'}
             alt="Enovo IP Consulting"
             width={110}
             height={34}

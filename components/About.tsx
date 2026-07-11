@@ -21,7 +21,7 @@ export default function About() {
             <div className="relative">
               <div className="w-72 md:w-80 h-80 md:h-96 rounded-[1.5rem] overflow-hidden shadow-2xl shadow-slate-200/80">
                 <Image
-                  src="/enovoweb/assets/images/contact/WhatsApp_Image_2026-07-04_at_2.26.35_PM.jpeg"
+                  src="/assets/images/contact/WhatsApp_Image_2026-07-04_at_2.26.35_PM.jpeg"
                   alt="Founder of Enovo IP Consulting — Patent and IP expert in Pune, India"
                   fill
                   sizes="(max-width: 768px) 288px, 320px"
