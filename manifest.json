@@ -9,13 +9,13 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/assets/images/logos/Enovo_Logo_Jpeg-01 copy.jpg",
+      "src": "/enovoweb/assets/images/logos/Enovo_Logo_Jpeg-01 copy.jpg",
       "sizes": "192x192",
       "type": "image/jpeg",
       "purpose": "any maskable"
     },
     {
-      "src": "/assets/images/logos/Enovo_Logo_Jpeg-01 copy.jpg",
+      "src": "/enovoweb/assets/images/logos/Enovo_Logo_Jpeg-01 copy.jpg",
       "sizes": "512x512",
       "type": "image/jpeg",
       "purpose": "any maskable"
